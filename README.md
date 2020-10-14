@@ -7,7 +7,7 @@ You can install this plugin into your CakePHP application using [composer](https
 The recommended way to install composer packages is:
 
 ```
-composer require richardpiel/dev-bar --dev
+composer require richardpiel/dev-bar
 ```
 
 Then you'll need to load the plugin in your `src/Application.php` file.
