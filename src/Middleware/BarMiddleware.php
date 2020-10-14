@@ -48,7 +48,7 @@ class BarMiddleware
 
         $message = Configure::read('DevBar.message') ? Configure::read('DevBar.message') : __('Debug is enabled!');
 
-        $development_bar = '<div id="devbar" style="width:100%;padding:2px 10px;background-color: #e63757;position: absolute;top: 0;left: 0;text-align:right;color:white">' . $$message . '</div>';
+        $development_bar = '<div id="devbar" style="width:100%;padding:2px 10px;background-color: #e63757;position: absolute;top: 0;left: 0;text-align:right;color:white">' . $message . '</div>';
         
         // Inject DevBar in body content before body end tag
         $contents = substr($contents, 0, $pos) . $development_bar . substr($contents, $pos);
